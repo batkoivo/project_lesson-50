@@ -42,6 +42,10 @@
 ## PHP Boilerplate
 
 ### Routing
+- .htaccess setup
+- Get base folder
+- Get URI
+- MVC?
 ### Templete sisteme
 ### DataBase management
 
@@ -57,4 +61,4 @@
 
 ### Backend API (Services)
 ## Mobile application
-# project_lesson-50
+
