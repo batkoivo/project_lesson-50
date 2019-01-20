@@ -1,13 +1,13 @@
 # Net IT Web dev project - 2018
 ## DataBase setup
-CREATE USER 'wd_2018u'@'localhost' IDENTIFIED VIA mysql_native_password USING '***';<br>
-GRANT USAGE ON . TO 'wd_2018u'@'localhost' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0<br>
-GRANT SELECT, INSERT, UPDATE, DELETE ON wd\_2018.* TO 'wd_2018u'@'localhost';
+>CREATE USER 'net_it_lesson-50u'@'localhost' IDENTIFIED VIA mysql_native_password USING '***';
+>GRANT USAGE ON *.* TO 'net_it_lesson-50u'@'localhost' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
+>GRANT SELECT, INSERT, UPDATE, DELETE ON `net\_it\_lesson-50`.* TO 'net_it_lesson-50u'@'localhost';
 
 ### `user` - User table
 - user id
 
-CREATE TABLE wd_2018.user ( user_id INT NOT NULL AUTO_INCREMENT , email VARCHAR(50) NOT NULL , password VARCHAR(64) NOT NULL , rights INT NOT NULL DEFAULT '0' , active INT NOT NULL DEFAULT '0' , PRIMARY KEY (user_id)) ENGINE = InnoDB;
+CREATE TABLE net_it_lesson-50.user ( user_id INT NOT NULL AUTO_INCREMENT , email VARCHAR(50) NOT NULL , password VARCHAR(64) NOT NULL , rights INT NOT NULL DEFAULT '0' , active INT NOT NULL DEFAULT '0' , PRIMARY KEY (user_id)) ENGINE = InnoDB;
 
 - emeil
 - password
